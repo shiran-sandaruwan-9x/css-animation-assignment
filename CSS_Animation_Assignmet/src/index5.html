@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS animation</title>
+    <link rel="stylesheet" href="assersts/normalize.css">
+    <style>
+        section{
+            overflow: hidden;
+        }
+        section>div{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 10s change alternate-reverse infinite;
+        }
+        section>div>img{
+            width: 20%;
+            height: 100vh;
+            float: left;
+        }
+        @keyframes change {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: 0;
+            }
+            35%{
+                left: -100%;
+            }
+            60%{
+                left: -100%;
+            }
+
+            70%{
+                left: -200%;
+            }
+
+            100%{
+                left: -200%;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <img src="assersts/pic/Wallpaper%201080p%20(8).jpg">
+        <img src="assersts/pic/Wallpaper%201080p%20(35).jpg">
+        <img src="assersts/pic/Wallpaper%201080p%20(9).jpg">
+    </div>
+
+</section>
+</body>
+</html>
